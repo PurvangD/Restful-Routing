@@ -85,7 +85,7 @@ app.get("/blogs/:id", function (req,res) {
     })
 });
 
-//Edit ROute
+//Edit Route
 
 app.get("/blogs/:id/edit", function (req,res) {
     Blog.findById(req.params.id, function (err,foundBlog) {
@@ -97,6 +97,7 @@ app.get("/blogs/:id/edit", function (req,res) {
     }
     });
 })
+
 
 
 
